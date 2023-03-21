@@ -2,6 +2,8 @@
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
+[中文](README.zh-CN.md)
+
 3gpp amrnb codec library
 
 This warehouse is a RT thread ported version of 3gpp AMR, providing software encoding and decoding for AMR. In order to adapt to the MCU environment, all floats are modified to float to apply the acceleration function of the fpu, which may cause some audio distortion because some calculation accuracy is reduced from double to float. All MCUs containing fpus can use this warehouse to obtain a good encoding and decoding experience, such as stm32f407, stm32f429, stm32h750, and so on.
