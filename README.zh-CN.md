@@ -2,6 +2,8 @@
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
+[中文](README.zh-CN.md)
+
 3gpp amrnb编解码库
 
 本仓库为3gpp amr的rt-thread移植版本，提供amr的软件编解码。为了适应mcu环境，所有浮点均修改为了float，以应用fpu的加速功能，可能会造成一定程度的音频失真，因为部分计算精度从double降低为了float。所有包含fpu的mcu均可使用本仓库得到良好的编解码体验，例如stm32f407，stm32f429，stm32h750等。
