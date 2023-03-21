@@ -30,8 +30,8 @@
 
 ## 维护者
 
-[@myshowtogo](https://github.com/myshowtogo)。
-[@llyhwdmx](https://github.com/llyhwdmx)。
+[@myshowtogo](https://github.com/myshowtogo)
+[@llyhwdmx](https://github.com/llyhwdmx)
 
 ## 如何贡献
 
@@ -42,7 +42,8 @@
 ### 贡献者
 
 感谢以下参与项目的人：
-<a href="graphs/contributors"><img src="https://opencollective.com/standard-readme/contributors.svg?width=890&button=false" /></a>
+
+[@llyhwdmx](https://github.com/llyhwdmx)
 
 ## 使用许可
 

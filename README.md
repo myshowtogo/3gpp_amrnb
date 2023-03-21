@@ -31,8 +31,8 @@ There are two MSH commands in decoder.c and encoder.c to encode and decode audio
 
 ## Maintainers
 
-[@myshowtogo](https://github.com/myshowtogo)。
-[@llyhwdmx](https://github.com/llyhwdmx)。
+[@myshowtogo](https://github.com/myshowtogo)
+[@llyhwdmx](https://github.com/llyhwdmx)
 
 ## Contributing
 
@@ -43,7 +43,8 @@ Standard Readme follows the [Contributor Covenant](http://contributor-covenant.o
 ### Contributors
 
 This project exists thanks to all the people who contribute. 
-<a href="graphs/contributors"><img src="https://opencollective.com/standard-readme/contributors.svg?width=890&button=false" /></a>
+
+[@llyhwdmx](https://github.com/llyhwdmx)
 
 ## License
 
