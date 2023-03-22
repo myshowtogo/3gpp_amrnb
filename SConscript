@@ -11,6 +11,7 @@ src     = Split("""
                 sp_enc.c
                 sp_dec.c
                 interf_dec.c
+                interf_rom.c
                 encoder.c
                 decoder.c
                 """)
