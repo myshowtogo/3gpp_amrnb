@@ -217,7 +217,7 @@ static void Prm2Bits(enum Mode mode, Word16 prm[], Word16 bits[])
  */
 static int EncoderMMS(enum Mode mode, Word16 *param, UWord8 *stream, enum TXFrameType frame_type, enum Mode speech_mode)
 {
-   Word32 j = 0, k;
+   Word32 j = 0, k = 0;
    Word16 *mask;
 
    memset(stream, 0, block_size[mode]);
