@@ -64,7 +64,7 @@ enum RXFrameType
 /*
  * initialize one instance of the speech decoder
  */
-void *Speech_Decode_Frame_init();
+void *Speech_Decode_Frame_init(void);
 
 /*
  * free status struct

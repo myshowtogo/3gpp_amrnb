@@ -401,7 +401,7 @@ static void Levinson(Float32 *old_A, Float32 *r, Float32 *A, Float32 *rc)
    err = r[0] + r[1] * rct[0];
 
    if (err <= 0.0)
-      err = 0.01F;
+      err = 0.01f;
 
    for (i = 2; i <= M; i++)
    {

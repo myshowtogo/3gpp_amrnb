@@ -16,7 +16,6 @@
 #include "typedef.h"
 
 #include "board.h"
-#include "rtthread.h"
 
 #ifndef ETSI
 #ifndef IF2
@@ -102,7 +101,7 @@ static void decoder_thread(void *parameter)
     file_speech = fopen(file_speech_path, "wb");
     if (file_speech == NULL)
     {
-        rt_kprintf("open speech file error !\n");
+        rt_kprintf("open speech file '%s' error !\n", file_speech_path);
         return;
     }
 
@@ -110,7 +109,7 @@ static void decoder_thread(void *parameter)
     file_analysis = fopen(file_analysis_path, "rb");
     if (file_analysis == NULL)
     {
-        rt_kprintf("open analysis file error !\n");
+        rt_kprintf("open analysis file '%s' error !\n", file_analysis_path);
         fclose(file_speech);
         return;
     }

@@ -22,13 +22,11 @@
  */
 #include <stdlib.h>
 #include <stdio.h>
-#include <stddef.h>
 #include <string.h>
 #include "typedef.h"
 #include "interf_enc.h"
 
 #include "board.h"
-#include <rtthread.h>
 
 #ifndef ETSI
 #ifndef IF2
@@ -131,7 +129,7 @@ static void encoder_thread(void *parameter)
     file_encoded = fopen(file_encoded_path, "wb");
     if (file_encoded == NULL)
     {
-        rt_kprintf("open encoded file error !\n");
+        rt_kprintf("open encoded file '%s' error !\n", file_encoded_path);
         return;
     }
 
@@ -139,7 +137,7 @@ static void encoder_thread(void *parameter)
     file_speech = fopen(file_speech_path, "rb");
     if (file_speech == NULL)
     {
-        rt_kprintf("open speech file error !\n");
+        rt_kprintf("open speech file '%s' error !\n", file_speech_path);
         fclose(file_encoded);
         return;
     }
@@ -253,7 +251,7 @@ static void encoder(int argc, char *argv[])
     memcpy(file_encoded_path, argv[4], strlen(argv[4]));
 
     // create thread
-    rt_thread_t thread = rt_thread_create("encoder", encoder_thread, RT_NULL, 20 * 1024, 21, 10);
+    rt_thread_t thread = rt_thread_create("encoder", encoder_thread, RT_NULL, 24 * 1024, 21, 10);
     if (thread != RT_NULL)
         rt_thread_startup(thread);
     return;

@@ -6353,7 +6353,7 @@ int Speech_Decode_Frame_reset(void **st)
  * Returns:
  *    success = 0
  */
-void *Speech_Decode_Frame_init()
+void *Speech_Decode_Frame_init(void)
 {
    Speech_Decode_FrameState *s;
 
